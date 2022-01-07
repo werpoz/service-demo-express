@@ -1,4 +1,13 @@
 clonar dentro de la carpeta
 git clone https://github.com/jhonlpjr/apitestexpres
-crear una carpeta dentro del repo 
-mkdir mysql
+
+docker-compose up -d 
+
+conectarse a la mysql  
+
+MYSQL_DATABASE: 'robots'
+MYSQL_USER: 'demo'
+MYSQL_PASSWORD: 'demo'
+MYSQL_ROOT_PASSWORD: 'demo'
+SERVICE_TAGS: dev
+SERVICE_NAME: mysql
