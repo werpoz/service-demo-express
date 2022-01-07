@@ -6,7 +6,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ~/onroad/source/service-demo-express/default.conf:/etc/nginx/conf.d/default.conf
+      - ./default.conf:/etc/nginx/conf.d/default.conf
     networks:
       - service-demo-express
   mysql:
@@ -17,7 +17,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ~/onroad/database/service-demo-express/mysql:/var/lib/mysql
+      - ./mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: 'robots'
       MYSQL_USER: 'demo'
@@ -33,7 +33,7 @@ services:
     container_name: node
     working_dir: /var/www
     volumes:
-      - ~/onroad/source/service-demo-express:/var/www/
+      - ./apitestexpress/:/var/www/
     tty: true
     ports:
       - "3000"

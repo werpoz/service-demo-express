@@ -1,1 +1,4 @@
-https://github.com/jhonlpjr/apitestexpress
+clonar dentro de la carpeta
+git clone https://github.com/jhonlpjr/apitestexpres
+crear una carpeta dentro del repo 
+mkdir mysql
